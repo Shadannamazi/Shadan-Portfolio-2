@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, Roboto Mono;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Roboto Mono', monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card{
+  @apply w-72 cursor-pointer border-b-4 rounded-md bg-gradient-to-t 
+  from-white/20 h-44 text-center px-3 py-7 self-end;
+}
+
+.card-active {
+  @apply h-96;
+}
+
+.button {
+  display: inline-block;
+  color: #000000;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: rgb(158, 164, 179);
+  opacity: 80%;
+  border-radius: 10%;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+  background-blend-mode: lighten;
+
+ 
+}
+
+.button:hover {
+  background-blend-mode: darken;
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+  }
+  
+  .grow:hover { 
+  transform: scale(1.06); 
+  }
+
+.size {
+  max-width: 100;
+}
